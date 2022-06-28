@@ -1,0 +1,178 @@
+<!-- https://www.tutorialrepublic.com/css-tutorial/css-tables.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            line-height: 26px;
+        }
+
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 7px 25px;
+            display: inline-block;
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 45px;
+        }
+
+        footer {
+            background: #333333;
+            padding: 50px 80px;
+            color: #ffffff;
+        }
+
+
+        table {
+            width: 100%;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #929090;
+            font-size: 18px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Specify a background color for every odd <tr> element */
+        tbody tr:nth-child(odd) {
+            background-color: #d4d3d3;
+        }
+
+        #id-label {
+            color: red;
+        }
+
+        .edit-btn {
+            background-color: #ffac00;
+            padding: 12px 28px;
+            border-radius: 4px;
+            width: 100%;
+            border: 1px solid #ffffff;
+        }
+
+        .delete-btn {
+            background-color: #e70000;
+            padding: 12px 28px;
+            border-radius: 4px;
+            border: 1px solid #ffffff;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+        <a href="#"><h1>Welcome to My App</h1></a>
+        <a href="#">Home</a>
+        <a href="#">Registeration Form</a>
+        <a href="#">Search</a>
+        <a href="#">Show Information</a>
+    </nav>
+
+</header>
+
+<div class="container">
+    
+    <br>
+    <table>
+        <thead>
+        <tr>
+            <th id="id-label">Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Mehrdad</td>
+            <td>Javan</td>
+            <td>mehrdad.javan@lexicon.se</td>
+            <td>
+                <button type="submit" class="edit-btn">Edit</button>
+            </td>
+            <td>
+                <button type="submit" class="delete-btn">Delete</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Erik</td>
+            <td>Svensson</td>
+            <td>erik.svensson@lexicon.se</td>
+            <td>
+                <button type="submit" class="edit-btn">Edit</button>
+            </td>
+            <td>
+                <button type="submit" class="delete-btn">Delete</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ulf</td>
+            <td>Bengtsson</td>
+            <td>ulf.bengtsson@lexicon.se</td>
+            <td>
+                <button type="submit" class="edit-btn">Edit</button>
+            </td>
+            <td>
+                <button type="submit" class="delete-btn">Delete</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Simon</td>
+            <td>Elbrink</td>
+            <td>simon.elbrink@lexicon.se</td>
+            <td>
+                <button type="submit" class="edit-btn">Edit</button>
+            </td>
+            <td>
+                <button type="submit" class="delete-btn">Delete</button>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    Copyright &copy; 2022 Lexicon
+</footer>
+
+
+</body>
+</html>
